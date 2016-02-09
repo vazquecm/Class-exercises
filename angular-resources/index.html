@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Learning Angular</title>
+  <link href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+</head>
+<body ng-app="TodoApp">
+    
+    <section ng-controller="TodoCtrl">
+
+    	<h1>{{ title }}</h1>
+    	<h3>{{ name }}</h3>
+    	<div>Complete? {{ complete }}</div>
+    		<div>
+    		<!-- binding the angular module to html -->
+  				<input type="text" ng-model="macaroni" />
+  				<div> {{ macaroni }} </div>
+			</div>
+				<input type="text" ng-model="searchText" />
+			<div>
+			<!-- this "ng-repeat" is like using a "for" loop, here is where we declare what we want to do hence: filter -->
+  			<ul ng-repeat="todo in todos | filter: searchText">
+    			<li>{{ todo.name }}</li>
+  			</ul>
+			</div>
+
+			<div>
+  			<ul ng-repeat="todo in todos">
+   		 		<li>{{ todo.name }} 
+   		 			<button ng-click="killTodo(todo)">Finish</button>
+   		 		</li>
+  			</ul>
+			</div>
+
+			<div>
+				Grouped tasks:
+					<select
+
+					    ng-model="theTodo"
+					    ng-options="value.name group by value.complete for value in todos">
+					</select>
+				</div>
+				
+
+  	</section>
+
+  	
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="lib/bower_components/angular/angular.min.js"></script>
+<script src="app/Todo.js"></script>
+</body>
+</html>

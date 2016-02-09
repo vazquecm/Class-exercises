@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sandwich Maker</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="requirejs/styles/style.css">
+</head>
+<body>
+
+    <h1>Cita's Cafe & Deli</h1>
+    <h2>What would you like to eat?</h2>
+
+<!--  bread choices    -->
+
+  <h3>Bread Options</h3>
+    <div id="bread">
+      <input type="checkbox" name="bread" value="white">White</input>
+      <input type="checkbox" name="bread" value="whole wheat">Whole Wheat</input>
+      <input type="checkbox" name="bread" value="french">French</input>
+      <input type="checkbox" name="bread" value="hoagie roll">Hoagie Roll</input>
+      <input type="checkbox" name="bread" value="pumperknickel">Pumperknickel</input>
+    </div>
+
+    <!-- meat choices  -->
+  <h3>Meat Options</h3>
+    <div id="meat">
+      <input type="checkbox" name="meat" value="ham">Ham</input>
+      <input type="checkbox" name="meat" value="turkey">Turkey</input>
+      <input type="checkbox" name="meat" value="salami">Salami</input>
+      <input type="checkbox" name="meat" value="roast beef">Roast Beef</input>
+      <input type="checkbox" name="meat" value="chicken">Chicken</input>
+    </div>
+
+<!-- cheese choices -->
+  <h3>Cheese Options</h3>
+    <div id="cheese">
+      <input type="checkbox" name="cheese" value="monteray jack">Monteray Jack</input>
+      <input type="checkbox" name="cheese" value="swiss">Swiss</input>
+      <input type="checkbox" name="cheese" value="mozzarella">Mozzarella</input>
+      <input type="checkbox" name="cheese" value="havarti">Havarti</input>
+      <input type="checkbox" name="cheese" value="cheddar">Cheddar</input>
+    </div>
+
+    <!-- condiments chosen -->
+
+  <h3>Condiment Options</h3>
+    <div id="condiments">
+      <input type="checkbox" name="condiments" value="mayonnaise">Mayonnaise</input>
+      <input type="checkbox" name="condiments" value="mustard">Mustard</input>
+      <input type="checkbox" name="condiments" value="salt">Salt</input>
+      <input type="checkbox" name="condiments" value="pepper">Pepper</input>
+      <input type="checkbox" name="condiments" value="none"></input>
+    </div>
+
+    <!-- veggie choices -->
+
+  <h3>Veggie Options</h3>
+    <div id="veggies">
+      <input type="checkbox" name="veggies" value="lettuce">Lettuce</input>
+      <input type="checkbox" name="veggies" value="tomato">Tomato</input>
+      <input type="checkbox" name="veggies" value="pickles">Pickles</input>
+      <input type="checkbox" name="veggies" value="onions">Onions</input>
+      <input type="checkbox" name="veggies" value="peppers">Peppers</input>
+    </div>
+
+ <!-- drink options -->
+
+  <h3>Drink Options</h3>
+    <div id="drinks">
+      <input type="checkbox" name="drinks" value="water">Water</input>
+      <input type="checkbox" name="drinks" value="coffee">Coffee</input>
+      <input type="checkbox" name="drinks" value="coke">Coke</input>
+      <input type="checkbox" name="drinks" value="sweet tea">Sweet Tea</input>
+      <input type="checkbox" name="drinks" value="sprite">Sprite</input>
+    </div>
+
+<!-- extras -->
+
+  <h3>Extras</h3>
+    <div id="extras">
+      <input type="checkbox" name="extras" value="chips">Chips</input>
+      <input type="checkbox" name="extras" value="preztels">Pretzels</input>
+      <input type="checkbox" name="extras" value="cookies">Cookies</input>
+    </div>
+ 
+<!-- final order -->
+
+<h2>Order Placed and Total Due</h2>
+  <div id="total-due">
+    <input type="text"></input>
+  </div>
+
+<!-- beginning of script files -->
+
+   <!-- // <script src="./lib/bower_components/jquery/dist/jquery.min.js"></script> -->
+   <script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
+</body>
+</html>
