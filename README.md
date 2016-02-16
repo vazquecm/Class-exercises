@@ -1,3 +1,5 @@
-# Class-exercises
+# Nashville Software School Class Exercises
 
-Different exercises done in class that aide in learning various concepts of coding.  Some may or may not be totally completed due to class schedule.
+##Cohort 11 - Frontend Curriculum
+
+Different exercises done in class that aide in learning various concepts of coding.  
